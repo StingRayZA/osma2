@@ -29,7 +29,7 @@ connectDB();
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Ready to Innovate?</title>
+<title>Open Source Maturity Assessment</title>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" >
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 </head>
@@ -45,7 +45,7 @@ connectDB();
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="assess.php"><img src="images/innovate.png">  Ready to Innovate?</a>
+			<a class="navbar-brand" href="index.php"><img src="images/innovate.png">  Open Source Maturity Assessment</a>
 		</div>
 		<!-- menu items -->
 		<div class="collapse navbar-collapse" id="navbar1">

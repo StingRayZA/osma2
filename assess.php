@@ -14,15 +14,17 @@ include('functionPutFieldsets.php');
 <!-- <link rel="stylesheet" href="css/jquery-ui.css"> -->
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/muuri.css">
+<link rel="stylesheet" href="css/image-picker.css">
 
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/image-picker.js"></script>
 
 <title>Open Source Maturity Assessment</title>
 
 </head>
 <body>
-
 <nav class="navbar navbar-default">
 	<div class="container-fluid">
 		<div class="navbar-header">
@@ -66,7 +68,8 @@ include('functionPutFieldsets.php');
 The assessment looks at a variety of areas regarding Open Source software including:
 <ul>
     <ul>
-        <li class="mainText">Business Goals</li>
+<!--         <li class="mainText">Business Goals</li> -->
+        <li class="mainText">Areas of Interest</li>
         <li class="mainText">General Knowledge of Open Source</li>
         <li class="mainText">Development Standards and Tools</li>
         <li class="mainText">Upstream Community Participation</li>
@@ -79,9 +82,9 @@ The assessment looks at a variety of areas regarding Open Source software includ
 
 <br>
   </div>
-  <div class="tab">Details
-    <p><input placeholder="Client Name" oninput="this.className = ''" name="customerName" value="ChrisJ Inc"></p>
-    <p><input placeholder="Email Address" oninput="this.className = ''" name="rhEmail" value="cj@cj.com"></p>
+  <div class="tab"><h3>Client Details</h3>
+    <p><input placeholder="Client Name" oninput="this.className = ''" name="customerName"></p>
+    <p><input placeholder="Email Address" oninput="this.className = ''" name="rhEmail"></p>
 <?php putCountries();?>
 
 <?php putLoBs();?>
@@ -124,7 +127,9 @@ print '<hr><label for="comments">Notes</label>
 
 ?>
 
-  <div class="tab">
+<!--  <div class="tab">
+
+
   <h2>Business Goals for Open Source</h2>
 
   <div class="board">
@@ -164,6 +169,40 @@ print '<hr><label for="comments">Notes</label>
 
 
   </div>
+-->
+
+  <div class="tab">
+  <h2>Areas of Interest</h2>
+
+<p class="mainText">Red Hat use the 3 areas of <b>Consume</b>, <b>Collaborate</b> and <b>Create</b> when understanding the main areas of interest for an organisation when it comes to Open Source software. These areas are underpinned by <b>Strategy and Governance policies</b></p>
+<center>
+<img src="images/roundal.png">
+</center>
+<p class="mainText">
+Other areas which should be addressed are the other underpinning principles of Open Source software such as Transparency, Inclusivity, Adaptability and Meritocracy
+</div>
+  <div class="tab">
+<p class="mainText">Which of these are the highest priority for your organisation?</p>
+
+
+<div class="row">
+  <div class="column left">
+<i class="arr-left"></i><h4>Low Priority</h4>
+</div> 
+
+  <div class="column middle">
+<h3>Consuming Open Source software</h3><input type="range" name="consume" min="0" max="5" value="0"> 
+<h3>Collaborate with Open Source communities</h3><input type="range" name="collaborate" min="0" max="5" value="0"> 
+<h3>Creating Open Source projects</h3><input type="range" name="createOS" min="0" max="5" value="0"> 
+<h3>Understanding Open Source Strategy and Governance</h3><input type="range" name="policy" min="0" max="5" value="0"> 
+</div>
+
+  <div class="column right">
+<i class="arr-right"></i><h4>High Priority</h4>
+</div>
+
+</div>
+</div>
 
   <div class="tab">
   <h2>General Knowledge of Open Source</h2>
@@ -256,7 +295,7 @@ function nextPrev(n) {
   // This function will figure out which tab to display
   var x = document.getElementsByClassName("tab");
   // Exit the function if any field in the current tab is invalid:
-  if (n == 1 && !validateForm()) return false;
+  //if (n == 1 && !validateForm()) return false;
   // Hide the current tab:
   x[currentTab].style.display = "none";
   // Increase or decrease the current tab by 1:
@@ -308,10 +347,8 @@ function fixStepIndicator(n) {
 
 
 </div>
+<script src='js/web-animations.min.js'></script>
+<script src='js/hammer.min.js'></script>
 
-<!-- <script src='js/web-animations.min.js'></script> -->
-<script src='js/hammer.min.js'></script>  
-<script src='js/muuri.min.js'></script>
-<script src="js/index.js"></script>
 </body>
 </html>
