@@ -260,7 +260,7 @@ while ($i < 5) {
 #	print "Color Score: $colorScore";
    $tmpIntScore = round($totalAreas[$ii]);
    $actionItem = $tmpIntScore . "-action";
-	print '<tr><td><p data-color="' . round($colorScore,0) . '">' . $totalAreasNames[$i] . '</p></td><td>' . round($totalAreas[$ii]) . " <br><i>(" . $totalAreas[$ii] .  ')</i></td><td>' . $json[$totalAreasNames[$i]][$tmpIntScore] .'</td><td>' . $json[$totalAreasNames[$i]][$actionItem] . '</td></tr>';
+	print '<tr><td><p data-color="' . round($colorScore,0) . '">' . $totalAreasNames[$i] . '</p></td><td>' . round($totalAreas[$ii]) . '</td><td>' . $json[$totalAreasNames[$i]][$tmpIntScore] .'</td><td>' . $json[$totalAreasNames[$i]][$actionItem] . '</td></tr>';
 #   print "Area: " . $totalAreasNames[$i] . " Score: " . $totalAreas[$ii] . "<br>";
    $overallScores[$totalAreasNames[$i]] = $totalAreas[$ii];
 $i++;
