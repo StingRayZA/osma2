@@ -71,7 +71,6 @@
   				<li><a href="login.php">Login</a></li>
  				<li><a target="_blank" href="https://github.com/boogiespook/osma2">Github</a></li>
   				<?php } ?>
-
   			</ul>
   		</div>
   	</div>
@@ -259,7 +258,7 @@ while ($i < 5) {
 	$ii = $i + 1;
 	$colorScore = $totalAreas[$ii] * 20;
 #	print "Color Score: $colorScore";
-   $tmpIntScore = ceil($totalAreas[$ii]);
+   $tmpIntScore = round($totalAreas[$ii]);
    $actionItem = $tmpIntScore . "-action";
 	print '<tr><td><p data-color="' . round($colorScore,0) . '">' . $totalAreasNames[$i] . '</p></td><td>' . round($totalAreas[$ii]) . " <br><i>(" . $totalAreas[$ii] .  ')</i></td><td>' . $json[$totalAreasNames[$i]][$tmpIntScore] .'</td><td>' . $json[$totalAreasNames[$i]][$actionItem] . '</td></tr>';
 #   print "Area: " . $totalAreasNames[$i] . " Score: " . $totalAreas[$ii] . "<br>";
