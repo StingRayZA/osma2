@@ -94,7 +94,7 @@ if(strpos($resp, '"success": true') !== FALSE) {
 <!DOCTYPE html>
 <html>
 <head>
-	<title>RTI Registration</title>
+	<title>OSMA Registration</title>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" >
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -112,7 +112,7 @@ if(strpos($resp, '"success": true') !== FALSE) {
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="index.php"><img src="images/innovate.png">  Ready to Innovate?</a>
+			<a class="navbar-brand" href="index.php"><img src="images/innovate.png">  Open Source Maturity Assessment</a>
 		</div>
 		<!-- menu items -->
 		<div class="collapse navbar-collapse" id="navbar1">
@@ -178,6 +178,4 @@ if(strpos($resp, '"success": true') !== FALSE) {
 <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
-
-
 

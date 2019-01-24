@@ -1,6 +1,5 @@
 <?php
 
-
 function putCountries() {
 print '
   <fieldset>
@@ -290,6 +289,5 @@ print '
 }
 
 }
-
 
 ?>

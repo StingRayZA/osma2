@@ -59,7 +59,7 @@ session_start();
 		</div>
 	</div>
 </nav>
-
+ 
 <?php
 if(isset($_SESSION['usr_id'])) {
 include 'dbconnect.php';
