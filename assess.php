@@ -42,10 +42,12 @@ include('functionPutFieldsets.php');
 				<li><p class="navbar-text"><a href="assess.php">Run Assessment</a></p></li>
 				<li><p class="navbar-text">Signed in as <?php echo $_SESSION['usr_name']; ?></p></li>
 				<li><p class="navbar-text"><a href="logout.php">Log Out</a></p></li>
-				<?php } else { ?>
+				<li><a target="_blank" href="https://github.com/boogiespook/osma2">Github</a></li>
+								<?php } else { ?>
 				<li><a href="register.php">Register</a></li>
 				<li><a href="login.php">Login</a></li>
-				<?php } ?>
+				<li><a target="_blank" href="https://github.com/boogiespook/osma2">Github</a></li>
+								<?php } ?>
 
 			</ul>
 		</div>
